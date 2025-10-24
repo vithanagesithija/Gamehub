@@ -1,10 +1,13 @@
 {
+  "homepage": "https://vithanagesithija.github.io/react-app2",
   "name": "react-app2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
